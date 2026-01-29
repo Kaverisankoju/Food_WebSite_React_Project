@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -91,3 +92,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # React_Project
 >>>>>>> 1a025c07badc903c51735ac30378d4b96264cbb8
 >>>>>>> 778774d0c7e2e08a1681a003c260007890aa71c0
+=======
+# Food_WebSite_React_Project
+>>>>>>> 023942e060002a0c38ced78441ac97964658594e
