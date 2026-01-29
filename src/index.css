@@ -1,15 +1,14 @@
-<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-=======
 body {
   font-family: Arial, sans-serif;
   background: #f8fafc;
 }
 
-input, select, button {
+input,
+select,
+button {
   padding: 8px;
 }
->>>>>>> 778774d0c7e2e08a1681a003c260007890aa71c0
