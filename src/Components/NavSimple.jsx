@@ -28,7 +28,7 @@ function NavSimple() {
         {/* Links */}
         <div className="flex gap-8 font-semibold text-gray-600">
           <NavLink
-            to="/"
+            to="/landing"
             className={({ isActive }) =>
               isActive
                 ? "text-green-600 border-b-2 border-green-600"
