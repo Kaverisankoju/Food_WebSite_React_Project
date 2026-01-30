@@ -5,6 +5,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { dataContext } from "../Context/UserContext";
 import { food_items } from "../food";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 function Nav(){
     let {input,setInput,Cate,setCate,showCart,setShowCart} = useContext(dataContext)
@@ -19,6 +20,9 @@ function Nav(){
          <div className="w-[60px] h-[60px]  bg-white flex justify-center items-center rounded-md shadow-xl">
             <MdOutlineFastfood className="w-[30px] h-[30px] text-green-500"/>
          </div>
+        
+        
+
          <form className="w-[45%] h-[60px] bg-white flex items-center px-5 gap-5 rounded-md shadow-md md:w-[70%]" onSubmit={(e)=>e.preventDefault()}>
             <IoMdSearch className="text-green-500 w-[20px] h-[20px] "/>
             <input type="text" placeholder="Search Item..."  className="w-[100%] outline-none text-[16px] md:text-[20px]" onChange={(e)=>setInput(e.target.value)} value={input}/>

@@ -8,6 +8,7 @@ import { GiHamburger } from "react-icons/gi";
 import { CiFries } from "react-icons/ci";
 import { LuSalad } from "react-icons/lu";
 import { LuDessert } from "react-icons/lu";
+import { GiIceCreamCone } from "react-icons/gi";
  const Categories = [
     {
       id:1,
@@ -59,7 +60,7 @@ import { LuDessert } from "react-icons/lu";
   { 
     id: 10, 
     name: "dessert", 
-    image: <LuDessert className="w-[60px] h-[60px] text-green-600"/> 
+    image: <GiIceCreamCone className="w-[60px] h-[60px] text-green-600"/> 
   }
 ]
 export default Categories

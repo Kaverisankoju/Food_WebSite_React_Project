@@ -9,6 +9,7 @@ import { MdTranslate } from "react-icons/md";
 import Card2 from "../Components/Card2";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
+import menu_bg from "../assets/menu_bg.jpg"
 
 function Home(){
   let {Cate,setCate,input,showCart,setShowCart} = useContext(dataContext)
@@ -30,7 +31,10 @@ function Home(){
   let total = Math.floor(subtotal+deliveryFee+taxes)
 
     return(
-        <div className="bg-slate-300 w-full min-h-screen">
+        <div
+  className="w-full min-h-screen bg-cover bg-center"
+  style={{ backgroundImage: `url(${menu_bg})` }}
+>
           <Nav/>
           {!input?<div className="flex flex-wrap justify-center items-center gap-5 w-[100%]">
             {Categories.map((item)=>{
@@ -43,7 +47,7 @@ function Home(){
           </div>:null}
           
           <div className="w-full flex flex-wrap gap-5 px-5 justify-center items-center pt-8 pb-8">
-            {Cate.length>1?Cate.map((item)=>(
+            {Cate.length>0?Cate.map((item)=>(
                 <Card name={item.food_name} image={item.food_image} price={item.price} id={item.id} type={item.food_type}/>
             )):<div className="text-center text-2xl text-green-500 font-semibold pt-5">NO DISH FOUND</div>}
             
